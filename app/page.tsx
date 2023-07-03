@@ -1,4 +1,4 @@
-import Board from "@/containers/Board"
+import Board from "@/componentsContainers/Board"
 
 function page() {
   return (
