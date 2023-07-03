@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+@-webkit-keyframes backgroundMovement {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes backgroundMovement {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes backgroundMovement {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}    
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    font-size: x-large;
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(313deg, #01f0b2, #5187f3);
+    background-size: 400% 400%;
+    -webkit-animation: backgroundMovement 13s ease infinite;
+    -moz-animation: backgroundMovement 13s ease infinite;
+    animation: backgroundMovement 13s ease infinite;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.boardGrid {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 300px;
+    height: 300px;
+}
+
+.boardGrid2 {
+    margin-top: 90px;
+    position: absolute;
+    z-index: -123;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-wrap: wrap; 
+    width: 300px;
+    height: 300px;
+}
+
+#square1 {
+    border-right: 1.5px solid #252525;
+    border-bottom: 1.5px solid #252525;
+}
+
+#square2 {
+    border-right: 1.5px solid #252525;
+    border-left: 1.5px solid #252525;
+    border-bottom: 1.5px solid #252525;
+}
+
+#square3 {
+    border-left: 1.5px solid #252525;
+    border-bottom: 1.5px solid #252525;
+}
+
+#square4 {
+    border-top: 1.5px solid #252525;
+    border-right: 1.5px solid #252525;
+    border-bottom: 1.5px solid #252525;
+}
+
+#square5 {
+    border: 1.5px solid #252525;
+}
+
+#square6 {
+    border-top: 1.5px solid #252525;
+    border-left: 1.5px solid #252525;
+    border-bottom: 1.5px solid #252525;
+}
+
+#square7 {
+    border-top: 1.5px solid #252525;
+    border-right: 1.5px solid #252525;
+}
+
+#square8 {
+    border-top: 1.5px solid #252525;
+    border-right: 1.5px solid #252525;
+    border-left: 1.5px solid #252525;
+}
+
+#square9 {
+    border-top: 1.5px solid #252525;
+    border-left: 1.5px solid #252525;
+}
+
+#boardGridHidden {
+    color: transparent;
+}
+
+.buttons {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 4px 16px;
+    display: flex;
+    justify-content: center;
+    background-color: #252525;
+    color: #ffffff;
+    border-radius: 8px;
+    height: 40px;
+    width: 140px;
+}
+
+#buttonActive {
+    border-bottom: 2px solid #ffffff;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.square_x {
+    color: #252525;
+}
+
+.square_o {
+    color: #d9d9d9;
+}
+
+#reset {
+    padding: 4px 16px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #252525;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.winner {
+    max-width: 300px;
+    max-height: 300px;
+    position: absolute;
+    font-size: 40px;
+}
+
