@@ -67,13 +67,13 @@ const Board = () => {
         <div className="buttons">
           <div
             className="button"
-            id={currentPlayer === "X" ? "buttonActive" : "_"}
+            id={currentPlayer === "X" ? "_" : "buttonActive"}
           >
             <span>X</span>
           </div>
           <div
             className="button"
-            id={currentPlayer === "O" ? "buttonActive" : "_"}
+            id={currentPlayer === "O" ? "_" : "buttonActive"}
           >
             <span>O</span>  
           </div>
